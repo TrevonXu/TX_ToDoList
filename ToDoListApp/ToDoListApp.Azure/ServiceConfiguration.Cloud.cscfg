@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ToDoListApp.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="ToDoListApp">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=azeaststorage;AccountKey=4D6WVmptA3IWoUuJrPyf9fyaQ+TLoXuXeC/WqkU2mPPRVTGsGS++XiQLJv0GqV5oNIVdzZa0LXqzxEwvwg93bA==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="root" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBzQYJKoZIhvcNAQcDoIIBvjCCAboCAQAxggGGMIIBggIBADBqMFwxEzARBgoJkiaJk/IsZAEZFgNjb20xGjAYBgoJkiaJk/IsZAEZFgphZGludGVybmFsMRIwEAYKCZImiZPyLGQBGRYCZ3MxFTATBgNVBAMTDFNBR0UtTkEtQ0EwMQIKGFs6MwAAAAAx1zANBgkqhkiG9w0BAQEFAASCAQBYrVO4Ev8TxCpJ75Gd2LADSctpwIwEyBeloh9/HCkHqrEcgqmXCLXc/ni3ryxs0ZO4V4UeVs+mGs3+euoW47uucIoQdNnySCA8kkL3FtL+5ZUgn/FUuoKtg7ghLR68Bw4mP69YEJ78sel4VQVaFGKoKxblXtyXCPXy0s29Q9PEyKDJYT+Yz77qJm34cVmaoX97lHnZz4fxT10k2lFeySB+Q7lUiWhA0xvsXEsvfnOEEdh0dJXs6gBG1o3Xy5cDOVkte3BC9giccNAM2jkPnkYXOmfdBrMsnXxmrL0CeeHA4/R6y/c7oq7Pmdv/Yq9igEgPGNRcyD2PnqrykkTzf2RqMCsGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIH1u1zBxbJU+ACPfzjoJsvGYB" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-11-30T23:59:59.0000000-08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="4852CCB4B235A2CC5D2699FEA6B437CBCE5337DD" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
